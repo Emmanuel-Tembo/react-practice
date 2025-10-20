@@ -1,18 +1,14 @@
-import Avatar from "./components/Avatar"
-import DynamicAvatar from "./components/DynamicAvatar"
-import Dateformat from "./components/Dateformat.jsx"
-import Screen from "./components/sidebar.jsx"
+import { Header } from "./components/travelHeader.jsx";
+import './App.css'
+import './components/header.css'
+import { PostLayout } from "./components/post.jsx";
 
-export default function Greeting(){
-    return(
-      <>
-        <Dateformat />
-        <Avatar />
-        <DynamicAvatar/>
-        <h1>Hello</h1>
-        <Screen />
-      </>
-      
-    )
+export default function AppLayout(){
+   return (
+      <div>
+         <Header />
+         <PostLayout/>
+      </div>
+   )
 } 
 
